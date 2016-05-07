@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/tomatob"
+            android:id="@+id/tomato1"
             android:layout_marginRight="8dp"/>
 
         <ImageView
@@ -27,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/tomatob"
+            android:id="@+id/tomato2"
             android:layout_marginRight="8dp"/>
 
         <ImageView
@@ -34,12 +36,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/tomatob"
+            android:id="@+id/tomato3"
             android:layout_marginRight="8dp"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:id="@+id/tomato4"
             android:src="@drawable/tomatob"/>
 
     </LinearLayout>
@@ -74,13 +78,14 @@
 
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
             android:layout_marginRight="64dp"
             android:layout_weight="1"
             android:src="@drawable/stop"
             android:layout_gravity="center"
             android:id="@+id/button2"
+            android:onClick="stopTimer"
             android:background="@android:color/transparent"/>
 
     </LinearLayout>
