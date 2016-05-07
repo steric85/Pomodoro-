@@ -7,56 +7,80 @@
     android:orientation="vertical"
     tools:context="com.myapps.android.pomodoro.TimerScreen">
 
+    <LinearLayout
+        android:layout_width="124dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tomatob"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tomatob"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tomatob"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tomatob"/>
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_weight="14"
         android:text="00:00"
         android:id="@+id/time_left"
         android:textColor="@color/white"
-        android:textSize="120sp"
+        android:textSize="130sp"
         android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:layout_marginBottom="30dp">
+        android:layout_weight="2.5"
+        android:layout_marginBottom="36dp">
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
+            android:layout_marginLeft="64dp"
             android:layout_weight="1"
             android:src="@drawable/play"
             android:layout_gravity="center"
+            android:id="@+id/button1"
+            android:onClick="startTimer"
             android:background="@android:color/transparent"/>
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
+            android:layout_marginRight="64dp"
             android:layout_weight="1"
             android:src="@drawable/stop"
             android:layout_gravity="center"
-            android:background="@android:color/transparent"/>
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
-            android:layout_weight="1"
-            android:src="@drawable/pause"
-            android:layout_gravity="center"
-            android:background="@android:color/transparent"/>
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:scaleType="centerInside"
-            android:layout_weight="1"
-            android:src="@drawable/alarm_off"
-            android:layout_gravity="center"
+            android:id="@+id/button2"
             android:background="@android:color/transparent"/>
 
     </LinearLayout>
