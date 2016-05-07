@@ -14,9 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Typeface face = Typeface.createFromAsset(getAssets(),"font1.ttf");
-        TextView heading = (TextView) findViewById(R.id.app_name);
-        heading.setTypeface(face);
+        TextView button1 = (TextView) findViewById(R.id.start_pom);
+        TextView button2 = (TextView) findViewById(R.id.shrt_brk);
+        TextView button3 = (TextView) findViewById(R.id.long_brk);
+        Typeface face2 = Typeface.createFromAsset(getAssets(),"font3.otf");
+        button1.setTypeface(face2);
+        button2.setTypeface(face2);
+        button3.setTypeface(face2);
     }
 
     public void startPomodoro(View view){
